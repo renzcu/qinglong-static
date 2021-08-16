@@ -154,6 +154,8 @@ let CookieService = class CookieService {
                 return { status: cookie_1.CookieStatus.invalid, nickname: '-' };
             }
             return { status: cookie_1.CookieStatus.abnormal, nickname: '-' };
+        }, (x) => {
+            return { status: cookie_1.CookieStatus.invaild, nickname: '白屏CK' };
         });
     }
     async formatCookies(cookies) {
